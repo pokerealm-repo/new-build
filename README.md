@@ -1,15 +1,8 @@
-# PokéMMO — Realtime Multiplayer Overworld
-
-A clean, self-contained recreation of the core of
-[aaron5670/PokeMMO-Online-Realtime-Multiplayer-Game](https://github.com/aaron5670/PokeMMO-Online-Realtime-Multiplayer-Game):
-a tile-based Pokémon overworld where **multiple real players share the same
-world in real time**.
+# PokéRealm — Realtime Multiplayer Overworld
 
 Built with **Phaser 3** (client) and **Colyseus** (realtime server), modernized
 to a single repo with **Vite** instead of Webpack. No paid APIs — it runs
 entirely on your machine.
-
-![overworld](../docs/images/PokeMMO.gif)
 
 ## Features
 
