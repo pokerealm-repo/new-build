@@ -1,0 +1,16 @@
+# Render Blueprint for the PokéMMO realtime server (Colyseus).
+# In Render: New + → "Blueprint" → pick this repo → it reads this file.
+# Render injects PORT automatically; the server reads process.env.PORT.
+services:
+  - type: web
+    name: pokemmo-server
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"

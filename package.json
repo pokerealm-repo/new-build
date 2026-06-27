@@ -1,0 +1,17 @@
+{
+  "name": "pokemmo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A realtime multiplayer Pokémon overworld — Phaser 3 client + Colyseus server. A clean recreation of the core PokeMMO online multiplayer game.",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n server,client -c green,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
